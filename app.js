@@ -21,7 +21,7 @@ var app = express();
 
 
 app.use(logger('dev'));
-app.use(cors({ origin: '*', credentials: true }));
+app.use(cors({ origin: 'https://fconnect-dharma.herokuapp.com', credentials: true }));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
